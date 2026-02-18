@@ -1,316 +1,279 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EgyptDigitalInfrastructure.com — Brand-Safe Digital Asset</title>
-  <meta name="description" content="EgyptDigitalInfrastructure.com is a brand-safe .com domain for digital infrastructure, cloud, data centers, cybersecurity, and transformation in Egypt." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egypt Digital Infrastructure | الاستثمار الرقمي</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a2e;
-      --text:#e9eefc;
-      --muted:#b9c6e6;
-      --line:rgba(255,255,255,.10);
-      --accent:#7dd3fc;
-      --accent2:#a78bfa;
+      --primary:#0a192f;
+      --secondary:#64ffda;
+      --text:#ccd6f6;
+      --accent:#112240;
+      --white:#fff;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      background: radial-gradient(1200px 600px at 20% 0%, rgba(125,211,252,.20), transparent 60%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(167,139,250,.18), transparent 55%),
-                  var(--bg);
+      font-family:"Cairo",sans-serif;
+      background:var(--primary);
       color:var(--text);
       line-height:1.6;
     }
-    a{color:inherit}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 70px}
-    .topbar{
-      display:flex;justify-content:space-between;align-items:center;gap:12px;
-      border:1px solid var(--line);border-radius:16px;padding:12px 14px;
-      background:rgba(15,26,46,.55);backdrop-filter: blur(10px);
+
+    /* Header */
+    header{
+      padding:18px 5%;
+      display:flex;
+      justify-content:flex-end; /* يمين */
+      align-items:center;
+      background:rgba(10,25,47,.9);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.06);
     }
-    .brand{
-      display:flex;gap:10px;align-items:center;
-      font-weight:700;letter-spacing:.2px;flex-wrap:wrap
+    .logo img{
+      height:84px;
+      width:auto;
+      display:block;
     }
-    .badge{
-      font-size:12px;
-      padding:4px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      color:var(--muted)
-    }
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:10px 14px;border-radius:12px;
-      border:1px solid var(--line);
-      text-decoration:none;
-      background:rgba(255,255,255,.04);
-      font-weight:650;
-    }
-    .btn.primary{
-      border-color: rgba(125,211,252,.35);
-      background: linear-gradient(135deg, rgba(125,211,252,.18), rgba(167,139,250,.12));
-    }
-    .hero{padding:36px 0 14px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    h1{margin:0 0 10px;font-size:40px;line-height:1.15}
-    .sub{color:var(--muted);font-size:16px;margin:0 0 18px}
-    .card{
-      border:1px solid var(--line);
-      background:rgba(15,26,46,.55);
-      border-radius:18px;
-      padding:18px;
-      backdrop-filter: blur(10px);
-    }
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
-    @media (max-width:700px){.kpis{grid-template-columns:1fr}}
-    .kpi{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.03)}
-    .kpi b{display:block;margin-bottom:4px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    h2{margin:0 0 10px;font-size:18px}
-    ul{margin:0;padding-left:18px;color:var(--muted)}
-    .hr{height:1px;background:var(--line);margin:14px 0}
-    .contact{
-      display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px
-    }
-    @media (max-width:800px){.contact{grid-template-columns:1fr}}
-    .small{color:var(--muted);font-size:13px}
-    .domain{
-      display:inline-block;
-      padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(125,211,252,.35);
-      background:rgba(125,211,252,.08);
-      font-weight:700;
-      letter-spacing:.2px;
-    }
-    .footer{margin-top:22px;color:var(--muted);font-size:12px}
-    .rtl{direction:rtl;text-align:right}
-    .mini{font-size:12px;color:var(--muted)}
-    .pill{
-      display:inline-block;
-      padding:6px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.03);
-      color:var(--muted);
-      font-size:12px;
-      margin-right:8px;
-      margin-bottom:8px;
+    @media (max-width:480px){
+      .logo img{height:62px}
     }
 
-    /* === Added: quick note style === */
-    .quicknote{
-      border:1px solid rgba(125,211,252,.22);
-      background:rgba(125,211,252,.08);
-      color:var(--text);
-      border-radius:14px;
-      padding:10px 12px;
-      margin:10px 0 14px;
-      font-weight:650;
+    /* Hero text */
+    .hero{
+      padding:34px 5% 10px;
+      text-align:center;
     }
-    .quicknote span{
-      color:var(--muted);
-      font-weight:600;
+    .hero h1{
+      font-size:2.35rem;
+      color:var(--white);
+      margin:0 0 10px;
+    }
+    .hero span{color:var(--secondary)}
+    .hero p{
+      margin:0 auto;
+      max-width:900px;
+      opacity:.92;
+      font-size:1.05rem;
+    }
+
+    /* Side-by-side section (image + stats) */
+    .side-section{
+      padding:28px 5% 60px;
+    }
+
+    .side-grid{
+      display:grid;
+      grid-template-columns: 0.85fr 1.15fr; /* الصورة أصغر */
+      gap:22px;
+      align-items:stretch;
+    }
+
+    /* Image card */
+    .image-card{
+      position:relative;
+      border-radius:16px;
+      overflow:hidden;
+      border:1px solid rgba(100,255,218,.18);
+      background:linear-gradient(135deg, rgba(17,34,64,.9), rgba(10,25,47,.9));
+      box-shadow:0 18px 50px rgba(0,0,0,.55);
+      min-height: 320px;
+    }
+    .image-card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter: brightness(1.05) contrast(1.02) saturate(0.95);
+      opacity:0.92;
+      transform: scale(1.02);
+    }
+    .image-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(
+        135deg,
+        rgba(10,25,47,.28),
+        rgba(17,34,64,.18),
+        rgba(100,255,218,.06)
+      );
+      pointer-events:none;
+    }
+
+    /* Stats panel */
+    .stats-panel{
+      background:var(--accent);
+      border-radius:16px;
+      padding:22px;
+      border:1px solid rgba(255,255,255,.06);
+      box-shadow:0 18px 50px rgba(0,0,0,.30);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap:16px;
+    }
+
+    .stat-box{
+      background:var(--primary);
+      padding:18px 16px;
+      border-radius:12px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,.06);
+      border-bottom:3px solid var(--secondary);
+    }
+    .stat-box h3{
+      margin:0 0 6px;
+      color:var(--secondary);
+      font-size:1.9rem;
+      font-weight:900;
+      line-height:1;
+    }
+    .stat-box p{
+      margin:0;
+      opacity:.9;
+      font-size:.95rem;
+    }
+
+    .sources{
+      margin-top:14px;
+      text-align:center;
+      font-size:.85rem;
+      opacity:.68;
+    }
+
+    /* Contact */
+    .contact-section{
+      padding:56px 5%;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .contact-section h3{
+      margin:0;
+      color:var(--white);
+      font-size:1.35rem;
+    }
+    .btn-container{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:22px;
+    }
+    .btn{
+      padding:12px 28px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      transition:.25s ease;
+      border:1px solid transparent;
+    }
+    .btn-whatsapp{background:#25d366;color:#fff}
+    .btn-call{background:#3498db;color:#fff}
+    .btn-email{background:transparent;border-color:rgba(100,255,218,.7);color:var(--secondary)}
+    .btn:hover{transform:translateY(-3px);opacity:.92}
+
+    footer{
+      text-align:center;
+      padding:26px 5%;
+      font-size:.85rem;
+      border-top:1px solid rgba(255,255,255,.06);
+      opacity:.9;
+    }
+
+    /* Responsive: stack on mobile */
+    @media (max-width: 900px){
+      .side-grid{
+        grid-template-columns: 1fr;
+      }
+      .image-card{min-height:260px}
+      .stats-grid{grid-template-columns: 1fr 1fr;}
+    }
+    @media (max-width: 520px){
+      .stats-grid{grid-template-columns: 1fr;}
+      .hero h1{font-size:2rem}
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- TOP -->
-    <div class="topbar">
-      <div class="brand">
-        <span class="domain">EgyptDigitalInfrastructure.com</span>
-        <span class="badge">Brand-safe B2B digital asset</span>
-      </div>
 
-      <!-- CTA واحد فقط -->
-      <div class="cta-row">
-        <a class="btn primary" href="#contact">Route me to the decision owner</a>
-      </div>
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png" alt="Snap The Name">
     </div>
+  </header>
 
-    <!-- HERO -->
-    <div class="hero">
-      <div>
-        <h1>Own a national-scale narrative — in one .com.</h1>
+  <section class="hero">
+    <h1>تملك نطاق <span>Egypt Digital Infrastructure</span></h1>
+    <p>الوجهة الرقمية الأولى لمشروعات البنية التحتية والتحول الرقمي في مصر.</p>
+  </section>
 
-        <!-- ✅ Inserted quick note (your sentence) -->
-        <div class="quicknote">
-          Brand-safe address for Egypt’s digital infrastructure narrative — built for an enterprise portal, annual report, or lead-gen hub.
-          <div class="mini" style="margin-top:6px">
-            <span>Note:</span> If you’re not the right person, please route this to the Brand/Digital/Growth owner who evaluates web assets.
+  <!-- Image on the side + stats beside it -->
+  <section class="side-section">
+    <div class="side-grid">
+
+      <div class="image-card" aria-label="Infrastructure image">
+        <img src="https://i.ibb.co/CsYMsZ3G/Whats-App-Image-2026-02-18-at-11-28-17-PM.jpg" alt="Infrastructure">
+      </div>
+
+      <div class="stats-panel">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h3>$6B+</h3>
+            <p>استثمارات القطاع</p>
+          </div>
+          <div class="stat-box">
+            <h3>16%</h3>
+            <p>نمو سنوي</p>
+          </div>
+          <div class="stat-box">
+            <h3>$1.1B</h3>
+            <p>سوق مراكز البيانات</p>
+          </div>
+          <div class="stat-box">
+            <h3>90 Mbps</h3>
+            <p>سرعة الإنترنت 2026</p>
           </div>
         </div>
 
-        <p class="sub">
-          A premium, descriptive domain built for <b>digital infrastructure</b> in Egypt:
-          <b>data centers</b>, <b>cloud</b>, <b>cybersecurity</b>, <b>networks</b>, and <b>digital transformation</b>.
-        </p>
-
-        <div class="card">
-          <h2>Why this domain is valuable</h2>
-          <div class="kpis">
-            <div class="kpi">
-              <b>Instant credibility</b>
-              A professional name that signals authority to enterprise buyers.
-            </div>
-            <div class="kpi">
-              <b>Clear meaning</b>
-              No explanation needed — the name communicates the sector instantly.
-            </div>
-            <div class="kpi">
-              <b>Future-proof</b>
-              Works for portals, reports, summits, directories, and lead-gen.
-            </div>
-          </div>
-
-          <div class="hr"></div>
-
-          <h2>Best-fit use cases</h2>
-          <div class="grid">
-            <div class="card" style="background:rgba(255,255,255,.03)">
-              <b>For Cloud / Data Center providers</b>
-              <ul>
-                <li>Enterprise landing hub for services & case studies</li>
-                <li>RFQ / lead capture for B2B clients</li>
-                <li>Thought-leadership + SEO foundation</li>
-              </ul>
-            </div>
-
-            <div class="card" style="background:rgba(255,255,255,.03)">
-              <b>For alliances / events / research</b>
-              <ul>
-                <li>“Egypt Digital Infrastructure” summit or conference page</li>
-                <li>Annual report portal (subscriptions & sponsorship)</li>
-                <li>Vendor directory + news hub</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="hr"></div>
-
-          <h2>What you’re really buying</h2>
-          <p class="small">
-            You’re not buying “a domain”. You’re buying a <b>board-room-ready address</b>
-            that reduces friction, increases trust, and makes your message easier to remember.
-          </p>
-
-          <div class="hr"></div>
-          <h2>Pricing guidance</h2>
-          <p class="small">
-            Price is aligned with enterprise-grade use cases.
-            Typical range for a domain of this category is <b>mid four figures to low five figures (USD)</b>,
-            depending on urgency and fit.
-          </p>
+        <div class="sources">
+          المصادر: تقارير وزارة الاتصالات (MCIT) - Ookla Speedtest - مجلس الوزراء المصري
         </div>
       </div>
 
-      <!-- RIGHT SIDEBAR -->
-      <div class="card">
-        <h2>Quick facts</h2>
-        <ul>
-          <li><b>Extension:</b> .com</li>
-          <li><b>Category:</b> Digital Infrastructure / Enterprise Tech</li>
-          <li><b>Ideal buyers:</b> Cloud, DC, Cyber, Networks, SI, Research, Industry Alliances</li>
-          <li><b>Positioning:</b> Brand-safe, professional, descriptive</li>
-        </ul>
-
-        <div class="hr"></div>
-
-        <h2>Signal words buyers care about</h2>
-        <div>
-          <span class="pill">Authority</span>
-          <span class="pill">Credibility</span>
-          <span class="pill">Enterprise</span>
-          <span class="pill">National-scale</span>
-          <span class="pill">Infrastructure</span>
-          <span class="pill">Brand-safe</span>
-        </div>
-
-        <div class="hr"></div>
-
-        <h2>One-step request</h2>
-        <p class="small">
-          If you’re not the right person, please route this to the
-          <b>Brand/Digital/Growth</b> owner who evaluates web assets.
-        </p>
-
-        <div class="cta-row" style="margin-top:12px;justify-content:flex-start">
-          <a class="btn primary" href="#contact">Route me to the decision owner</a>
-          <a class="btn" href="https://snapthename.com/" target="_blank" rel="noopener">SnapTheName</a>
-        </div>
-      </div>
     </div>
+  </section>
 
-    <!-- Arabic mini section (خفيفة) -->
-    <div class="card rtl" style="margin-top:12px">
-      <h2>ملخص بالعربي</h2>
-      <p class="small">
-        <b>EgyptDigitalInfrastructure.com</b> أصل رقمي B2B مناسب لشركات الداتا سنتر/الكلاود/الأمن السيبراني/الشبكات
-        أو لأي مبادرة/مؤتمر/تقرير سنوي يخص “البنية الرقمية في مصر”.
-        الاسم واضح ويعطي ثقة مؤسسية فورًا، ويصلح كبوابة خدمات أو Hub لتوليد عملاء.
-      </p>
-      <p class="small">
-        لو حضرتك مش صاحب القرار، رجاءً توجيهي للشخص/الفريق المسؤول عن تقييم الأصول الرقمية (Brand/Digital/Growth).
-      </p>
+  <section class="contact-section">
+    <h3>للتواصل المباشر</h3>
+    <div class="btn-container">
+      <a href="https://wa.me/201000001802" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a href="tel:+201000001802" class="btn btn-call"><i class="fas fa-phone"></i> اتصال</a>
+      <a href="mailto:Hussein.lashin@snapthename.com" class="btn btn-email"><i class="fas fa-envelope"></i> إيميل</a>
     </div>
+  </section>
 
-    <!-- CONTACT -->
-    <div id="contact" class="card" style="margin-top:12px">
-      <h2>Contact</h2>
-      <p class="small">
-        Serious B2B inquiries only. I can share transfer process and tailored positioning for your organization.
-      </p>
+  <footer>
+    SnapTheName.com &copy; 2026
+  </footer>
 
-      <div class="contact">
-        <div class="card" style="background:rgba(255,255,255,.03)">
-          <b>Phone</b><br/>
-          <span class="small">+201000001802</span>
-        </div>
-
-        <div class="card" style="background:rgba(255,255,255,.03)">
-          <b>WhatsApp</b><br/>
-          <span class="small">+201000001802</span><br/>
-          <a class="btn" style="margin-top:10px"
-             href="https://wa.me/201000001802"
-             target="_blank" rel="noopener">
-            Message on WhatsApp
-          </a>
-          <div class="mini" style="margin-top:8px">
-            WhatsApp link is ready (country code + number, no spaces).
-          </div>
-        </div>
-
-        <div class="card" style="background:rgba(255,255,255,.03)">
-          <b>Email</b><br/>
-          <a class="small" href="mailto:hussein.lashin@snapthename.com">hussein.lashin@snapthename.com</a>
-        </div>
-
-        <div class="card" style="background:rgba(255,255,255,.03)">
-          <b>Marketplace</b><br/>
-          <span class="small">SnapTheName — digital asset platform</span><br/>
-          <a class="btn" style="margin-top:10px"
-             href="https://snapthename.com/"
-             target="_blank" rel="noopener">
-            Open SnapTheName
-          </a>
-        </div>
-      </div>
-
-      <div class="footer">
-        © <span id="year"></span> — EgyptDigitalInfrastructure.com. Presented via SnapTheName.
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
