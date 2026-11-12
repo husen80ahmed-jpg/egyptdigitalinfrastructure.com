@@ -1,279 +1,1011 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Egypt Digital Infrastructure | الاستثمار الرقمي</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>EgyptDigitalInfrastructure.com | Available for Acquisition</title>
 
-  <style>
-    :root{
-      --primary:#0a192f;
-      --secondary:#64ffda;
-      --text:#ccd6f6;
-      --accent:#112240;
-      --white:#fff;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:"Cairo",sans-serif;
-      background:var(--primary);
-      color:var(--text);
-      line-height:1.6;
-    }
+<meta name="description" content="EgyptDigitalInfrastructure.com is available for acquisition. Explore verified digital infrastructure investment developments in Egypt and potential commercial uses for this domain.">
 
-    /* Header */
-    header{
-      padding:18px 5%;
-      display:flex;
-      justify-content:flex-end; /* يمين */
-      align-items:center;
-      background:rgba(10,25,47,.9);
-      position:sticky;
-      top:0;
-      z-index:1000;
-      backdrop-filter:blur(8px);
-      -webkit-backdrop-filter:blur(8px);
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-    .logo img{
-      height:84px;
-      width:auto;
-      display:block;
-    }
-    @media (max-width:480px){
-      .logo img{height:62px}
-    }
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    /* Hero text */
-    .hero{
-      padding:34px 5% 10px;
-      text-align:center;
-    }
-    .hero h1{
-      font-size:2.35rem;
-      color:var(--white);
-      margin:0 0 10px;
-    }
-    .hero span{color:var(--secondary)}
-    .hero p{
-      margin:0 auto;
-      max-width:900px;
-      opacity:.92;
-      font-size:1.05rem;
-    }
+<style>
+:root {
+  --navy:#0a192f;
+  --navy2:#112240;
+  --mint:#64ffda;
+  --white:#ffffff;
+  --text:#ccd6f6;
+  --muted:#92a8c5;
+  --border:rgba(255,255,255,.12);
+}
 
-    /* Side-by-side section (image + stats) */
-    .side-section{
-      padding:28px 5% 60px;
-    }
+* {box-sizing:border-box}
 
-    .side-grid{
-      display:grid;
-      grid-template-columns: 0.85fr 1.15fr; /* الصورة أصغر */
-      gap:22px;
-      align-items:stretch;
-    }
+html {scroll-behavior:smooth}
 
-    /* Image card */
-    .image-card{
-      position:relative;
-      border-radius:16px;
-      overflow:hidden;
-      border:1px solid rgba(100,255,218,.18);
-      background:linear-gradient(135deg, rgba(17,34,64,.9), rgba(10,25,47,.9));
-      box-shadow:0 18px 50px rgba(0,0,0,.55);
-      min-height: 320px;
-    }
-    .image-card img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      filter: brightness(1.05) contrast(1.02) saturate(0.95);
-      opacity:0.92;
-      transform: scale(1.02);
-    }
-    .image-card::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(
-        135deg,
-        rgba(10,25,47,.28),
-        rgba(17,34,64,.18),
-        rgba(100,255,218,.06)
-      );
-      pointer-events:none;
-    }
+body {
+  margin:0;
+  background:var(--navy);
+  color:var(--text);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.75;
+}
 
-    /* Stats panel */
-    .stats-panel{
-      background:var(--accent);
-      border-radius:16px;
-      padding:22px;
-      border:1px solid rgba(255,255,255,.06);
-      box-shadow:0 18px 50px rgba(0,0,0,.30);
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-    }
+body.lang-ar {
+  font-family:Cairo,sans-serif;
+}
 
-    .stats-grid{
-      display:grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap:16px;
-    }
+.lang-en .ar {display:none}
+.lang-ar .en {display:none}
 
-    .stat-box{
-      background:var(--primary);
-      padding:18px 16px;
-      border-radius:12px;
-      text-align:center;
-      border:1px solid rgba(255,255,255,.06);
-      border-bottom:3px solid var(--secondary);
-    }
-    .stat-box h3{
-      margin:0 0 6px;
-      color:var(--secondary);
-      font-size:1.9rem;
-      font-weight:900;
-      line-height:1;
-    }
-    .stat-box p{
-      margin:0;
-      opacity:.9;
-      font-size:.95rem;
-    }
+.container {
+  max-width:1160px;
+  margin:auto;
+  padding:0 22px;
+}
 
-    .sources{
-      margin-top:14px;
-      text-align:center;
-      font-size:.85rem;
-      opacity:.68;
-    }
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(10,25,47,.96);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px);
+}
 
-    /* Contact */
-    .contact-section{
-      padding:56px 5%;
-      text-align:center;
-      border-top:1px solid rgba(255,255,255,.06);
-    }
-    .contact-section h3{
-      margin:0;
-      color:var(--white);
-      font-size:1.35rem;
-    }
-    .btn-container{
-      display:flex;
-      justify-content:center;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:22px;
-    }
-    .btn{
-      padding:12px 28px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:800;
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      transition:.25s ease;
-      border:1px solid transparent;
-    }
-    .btn-whatsapp{background:#25d366;color:#fff}
-    .btn-call{background:#3498db;color:#fff}
-    .btn-email{background:transparent;border-color:rgba(100,255,218,.7);color:var(--secondary)}
-    .btn:hover{transform:translateY(-3px);opacity:.92}
+.nav {
+  min-height:82px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
 
-    footer{
-      text-align:center;
-      padding:26px 5%;
-      font-size:.85rem;
-      border-top:1px solid rgba(255,255,255,.06);
-      opacity:.9;
-    }
+.brand img {
+  height:65px;
+  max-width:175px;
+  object-fit:contain;
+}
 
-    /* Responsive: stack on mobile */
-    @media (max-width: 900px){
-      .side-grid{
-        grid-template-columns: 1fr;
-      }
-      .image-card{min-height:260px}
-      .stats-grid{grid-template-columns: 1fr 1fr;}
-    }
-    @media (max-width: 520px){
-      .stats-grid{grid-template-columns: 1fr;}
-      .hero h1{font-size:2rem}
-    }
-  </style>
+.lang-button {
+  background:transparent;
+  border:1px solid var(--mint);
+  color:var(--mint);
+  border-radius:8px;
+  padding:10px 19px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.hero {
+  padding:85px 0 75px;
+  background:
+    radial-gradient(
+      ellipse at 70% 20%,
+      rgba(100,255,218,.09),
+      transparent 55%
+    );
+}
+
+.eyebrow {
+  display:inline-block;
+  border:1px solid rgba(100,255,218,.4);
+  color:var(--mint);
+  border-radius:30px;
+  padding:6px 16px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+h1,h2,h3 {
+  line-height:1.3;
+  color:var(--white);
+}
+
+h1 {
+  font-size:clamp(29px,5vw,55px);
+  overflow-wrap:anywhere;
+  margin:0 0 20px;
+  letter-spacing:-1px;
+}
+
+.hero h2 {
+  font-size:clamp(21px,3vw,32px);
+  font-weight:600;
+  margin-bottom:19px;
+}
+
+.highlight {color:var(--mint)}
+
+.lead {
+  max-width:790px;
+  font-size:17px;
+  color:var(--muted);
+}
+
+.actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:32px;
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:14px 25px;
+  border-radius:9px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.2s;
+  font-size:14px;
+}
+
+.btn:hover {
+  transform:translateY(-3px);
+}
+
+.btn-primary {
+  background:var(--mint);
+  color:var(--navy);
+}
+
+.btn-outline {
+  color:var(--mint);
+  border:1px solid var(--mint);
+}
+
+.section {
+  padding:70px 0;
+  border-top:1px solid var(--border);
+}
+
+.section-title {
+  font-size:clamp(24px,3vw,35px);
+  margin:0 0 16px;
+}
+
+.section-intro {
+  color:var(--muted);
+  max-width:800px;
+  margin-bottom:36px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+
+.card {
+  padding:28px;
+  background:var(--navy2);
+  border:1px solid var(--border);
+  border-radius:15px;
+}
+
+.card h3 {
+  margin:12px 0;
+  font-size:20px;
+}
+
+.card p {
+  color:var(--muted);
+  font-size:15px;
+}
+
+.figure {
+  color:var(--mint);
+  font-size:30px;
+  font-weight:800;
+}
+
+.date {
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.source {
+  display:inline-block;
+  margin-top:14px;
+  color:var(--mint);
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+
+.source:hover {text-decoration:underline}
+
+.insight {
+  margin-top:27px;
+  border-left:3px solid var(--mint);
+  background:var(--navy2);
+  padding:23px;
+  border-radius:9px;
+}
+
+.lang-ar .insight {
+  border-left:0;
+  border-right:3px solid var(--mint);
+}
+
+.insight strong {color:var(--mint)}
+
+.use-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.use-card {
+  padding:27px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:rgba(17,34,64,.65);
+}
+
+.use-card h3 {
+  color:var(--mint);
+  font-size:19px;
+}
+
+.use-card p {
+  color:var(--muted);
+  font-size:15px;
+}
+
+.question-box {
+  padding:34px;
+  background:linear-gradient(135deg,#112240,#102d45);
+  border:1px solid rgba(100,255,218,.3);
+  border-radius:15px;
+}
+
+.question-box h3 {
+  font-size:24px;
+}
+
+.question-box p {
+  color:var(--text);
+}
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.step {
+  padding:25px;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+
+.step-number {
+  color:var(--mint);
+  font-size:28px;
+  font-weight:800;
+}
+
+.step p {
+  color:var(--muted);
+}
+
+.contact {
+  text-align:center;
+  padding:85px 0;
+  background:linear-gradient(180deg,#112240,#0a192f);
+}
+
+.contact .actions {
+  justify-content:center;
+}
+
+.contact p {
+  max-width:720px;
+  margin:15px auto;
+  color:var(--muted);
+}
+
+.disclaimer {
+  color:var(--muted);
+  font-size:12px;
+  margin-top:22px;
+}
+
+footer {
+  border-top:1px solid var(--border);
+  text-align:center;
+  padding:28px 20px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+@media(max-width:800px) {
+  .grid,.use-grid,.steps {
+    grid-template-columns:1fr;
+  }
+
+  .hero {padding:55px 0}
+
+  .section {padding:50px 0}
+
+  .brand img {height:50px}
+
+  .nav {min-height:70px}
+
+  .actions {
+    flex-direction:column;
+  }
+
+  .btn {width:100%}
+
+  .card {padding:23px}
+}
+
+@media(max-width:480px) {
+  h1 {font-size:29px}
+  .figure {font-size:26px}
+  .question-box {padding:23px}
+}
+</style>
 </head>
 
-<body>
+<body class="lang-en">
 
-  <header>
-    <div class="logo">
-      <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png" alt="Snap The Name">
+<header>
+  <div class="container nav">
+    <a class="brand" href="https://snapthename.com/"
+       aria-label="SnapTheName">
+      <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png"
+           alt="SnapTheName">
+    </a>
+
+    <button class="lang-button" id="languageButton"
+            type="button" onclick="switchLanguage()">
+      العربية
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+
+    <div class="eyebrow">
+      <span class="en">PREMIUM DOMAIN AVAILABLE</span>
+      <span class="ar">اسم نطاق متاح للاستحواذ</span>
     </div>
-  </header>
 
-  <section class="hero">
-    <h1>تملك نطاق <span>Egypt Digital Infrastructure</span></h1>
-    <p>الوجهة الرقمية الأولى لمشروعات البنية التحتية والتحول الرقمي في مصر.</p>
-  </section>
+    <h1>Egypt<span class="highlight">Digital</span>Infrastructure.com</h1>
 
-  <!-- Image on the side + stats beside it -->
-  <section class="side-section">
-    <div class="side-grid">
+    <div class="en">
+      <h2>A Clear Digital Identity for an Egypt-Focused Infrastructure Initiative</h2>
 
-      <div class="image-card" aria-label="Infrastructure image">
-        <img src="https://i.ibb.co/CsYMsZ3G/Whats-App-Image-2026-02-18-at-11-28-17-PM.jpg" alt="Infrastructure">
-      </div>
+      <p class="lead">
+        Egypt is attracting new data center, cloud and AI
+        infrastructure initiatives.
 
-      <div class="stats-panel">
-        <div class="stats-grid">
-          <div class="stat-box">
-            <h3>$6B+</h3>
-            <p>استثمارات القطاع</p>
-          </div>
-          <div class="stat-box">
-            <h3>16%</h3>
-            <p>نمو سنوي</p>
-          </div>
-          <div class="stat-box">
-            <h3>$1.1B</h3>
-            <p>سوق مراكز البيانات</p>
-          </div>
-          <div class="stat-box">
-            <h3>90 Mbps</h3>
-            <p>سرعة الإنترنت 2026</p>
-          </div>
+        For organizations building a dedicated presence
+        around Egypt's digital infrastructure market,
+        the right domain can help communicate
+        their focus from the first interaction.
+      </p>
+    </div>
+
+    <div class="ar">
+      <h2>هوية رقمية واضحة لمبادرة متخصصة في البنية التحتية الرقمية بمصر</h2>
+
+      <p class="lead">
+        يشهد السوق المصري إعلانات عن مشروعات جديدة في
+        مراكز البيانات والحوسبة السحابية والبنية التحتية
+        للذكاء الاصطناعي.
+
+        وللشركات التي تطلق مبادرة مستقلة تستهدف السوق المصري،
+        يمكن لاسم نطاق واضح أن يساعد في التعبير عن
+        نشاطها من أول تواصل مع العملاء والشركاء.
+      </p>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary"
+         href="https://wa.me/201000001802?text=Hello%2C%20I%20would%20like%20to%20discuss%20acquiring%20EgyptDigitalInfrastructure.com."
+         target="_blank" rel="noopener noreferrer">
+        <span class="en">Discuss Acquisition on WhatsApp</span>
+        <span class="ar">ناقش شراء الدومين عبر واتساب</span>
+      </a>
+
+      <a class="btn btn-outline"
+         href="mailto:Hussein.lashin@snapthename.com?subject=EgyptDigitalInfrastructure.com%20Acquisition%20Inquiry">
+        <span class="en">Contact the Domain Owner</span>
+        <span class="ar">تواصل مع مالك الدومين</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- MARKET EVIDENCE -->
+
+<section class="section" id="market">
+  <div class="container">
+
+    <div class="en">
+      <h2 class="section-title">
+        Real Investment Announcements.
+        An Evolving Market.
+      </h2>
+      <p class="section-intro">
+        Official announcements in 2026 indicate
+        substantial planned investment in Egypt's
+        data center and digital infrastructure sector.
+        Here are selected developments.
+      </p>
+    </div>
+
+    <div class="ar">
+      <h2 class="section-title">
+        استثمارات معلنة ومشروعات جديدة في السوق المصري
+      </h2>
+      <p class="section-intro">
+        تعكس الإعلانات الرسمية خلال عام 2026 وجود
+        خطط استثمارية مهمة في قطاع مراكز البيانات
+        والبنية التحتية الرقمية في مصر.
+        وفيما يلي أبرز التطورات الموثقة.
+      </p>
+    </div>
+
+    <div class="grid">
+
+      <!-- Hassan Allam -->
+      <article class="card">
+
+        <div class="figure">$400M</div>
+        <span class="date">15 June 2026</span>
+
+        <div class="en">
+          <h3>Hassan Allam Digital Infrastructure</h3>
+          <p>
+            Hassan Allam announced an initial investment
+            of approximately $400 million following
+            the granting of a license to establish and
+            operate data centers and cloud services.
+          </p>
         </div>
 
-        <div class="sources">
-          المصادر: تقارير وزارة الاتصالات (MCIT) - Ookla Speedtest - مجلس الوزراء المصري
+        <div class="ar">
+          <h3>حسن علام للبنية التحتية الرقمية</h3>
+          <p>
+            أعلنت شركة حسن علام عن استثمار أولي
+            مستهدف بنحو 400 مليون دولار،
+            بالتزامن مع منح ترخيص لإنشاء وتشغيل
+            مراكز البيانات وخدمات الحوسبة السحابية.
+          </p>
         </div>
+
+        <a class="source"
+           href="https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/110245"
+           target="_blank" rel="noopener noreferrer">
+          <span class="en">Official MCIT announcement ↗</span>
+          <span class="ar">المصدر: وزارة الاتصالات ↗</span>
+        </a>
+
+      </article>
+
+      <!-- Africa Data Centres Egypt -->
+      <article class="card">
+
+        <div class="figure">$200M</div>
+        <span class="date">8 September 2026</span>
+
+        <div class="en">
+          <h3>Africa Data Centres Egypt</h3>
+          <p>
+            A partnership involving Vodafone Business,
+            Elsewedy Electric and Cassava Technologies
+            targets approximately $200 million in
+            initial investment, potentially reaching
+            $1 billion at full project completion.
+          </p>
+        </div>
+
+        <div class="ar">
+          <h3>مشروع Africa Data Centres Egypt</h3>
+          <p>
+            تستهدف شراكة بين Vodafone Business
+            والسويدي إليكتريك وCassava Technologies
+            استثمارات أولية بنحو 200 مليون دولار،
+            قد ترتفع إلى مليار دولار عند اكتمال
+            المشروع وفق الخطط المعلنة.
+          </p>
+        </div>
+
+        <a class="source"
+           href="https://sis.gov.eg/en/media-center/news/communications-minister-witnesses-signing-of-egypt-s-largest-data-center-sovereign-ai-center"
+           target="_blank" rel="noopener noreferrer">
+          <span class="en">Official government announcement ↗</span>
+          <span class="ar">المصدر: الهيئة العامة للاستعلامات ↗</span>
+        </a>
+
+      </article>
+
+      <!-- Kemet -->
+      <article class="card">
+
+        <div class="figure">$270M</div>
+        <span class="date">23 September 2026</span>
+
+        <div class="en">
+          <h3>Kemet Data Center — Intro Group</h3>
+          <p>
+            Intro Group discussed plans for an
+            80 MW data center in the Suez Canal
+            Economic Zone, with approximately
+            $270 million planned for its first phase.
+          </p>
+        </div>
+
+        <div class="ar">
+          <h3>مركز بيانات Kemet — مجموعة إنترو</h3>
+          <p>
+            ناقشت مجموعة إنترو خطط إنشاء مركز بيانات
+            بقدرة مستهدفة تبلغ 80 ميجاوات داخل
+            المنطقة الاقتصادية لقناة السويس،
+            مع استثمارات مخططة للمرحلة الأولى
+            بنحو 270 مليون دولار.
+          </p>
+        </div>
+
+        <a class="source"
+           href="https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/118507"
+           target="_blank" rel="noopener noreferrer">
+          <span class="en">Official MCIT announcement ↗</span>
+          <span class="ar">المصدر: وزارة الاتصالات ↗</span>
+        </a>
+
+      </article>
+
+      <!-- Government policy -->
+      <article class="card">
+
+        <div class="figure">
+          <span class="en">Policy</span>
+          <span class="ar">تسهيلات</span>
+        </div>
+
+        <span class="date">7 November 2026</span>
+
+        <div class="en">
+          <h3>New Data Center Investment Measures</h3>
+          <p>
+            Egypt's Ministry of Investment announced
+            work on a package to attract data center
+            projects, including suitable land,
+            licensing and procedural facilitation.
+          </p>
+        </div>
+
+        <div class="ar">
+          <h3>إجراءات لجذب استثمارات مراكز البيانات</h3>
+          <p>
+            أعلنت وزارة الاستثمار العمل على حزمة
+            لجذب مشروعات مراكز البيانات،
+            تشمل تحديد الأراضي المناسبة
+            وتيسير الموافقات والتراخيص والإجراءات.
+          </p>
+        </div>
+
+        <a class="source"
+           href="https://sis.gov.eg/en/media-center/news/investment-minister-egypt-prepares-package-to-attract-data-center-investments/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="en">Official government announcement ↗</span>
+          <span class="ar">المصدر: الهيئة العامة للاستعلامات ↗</span>
+        </a>
+
+      </article>
+
+    </div>
+
+    <div class="insight">
+      <div class="en">
+        <strong>What these developments indicate</strong>
+        <p>
+          Egypt's digital infrastructure sector is
+          attracting commercial attention and planned capital.
+
+          These announcements do not guarantee returns,
+          market demand for any particular domain,
+          or the successful completion of every project.
+        </p>
+      </div>
+
+      <div class="ar">
+        <strong>ماذا تعني هذه التطورات؟</strong>
+        <p>
+          تعكس الإعلانات وجود اهتمام استثماري وتجاري
+          بقطاع البنية التحتية الرقمية في مصر.
+
+          لكنها لا تضمن عائدًا استثماريًا،
+          أو طلبًا على دومين معين،
+          أو اكتمال جميع المشروعات المعلنة.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMERCIAL USE -->
+
+<section class="section" id="opportunity">
+  <div class="container">
+
+    <div class="en">
+      <h2 class="section-title">
+        Where Could This Domain Create Business Value?
+      </h2>
+
+      <p class="section-intro">
+        EgyptDigitalInfrastructure.com may be suitable
+        for organizations developing a distinct
+        market-facing initiative in Egypt.
+      </p>
+    </div>
+
+    <div class="ar">
+      <h2 class="section-title">
+        كيف يمكن أن يخدم الدومين مشروعًا تجاريًا؟
+      </h2>
+
+      <p class="section-intro">
+        يمكن أن يناسب EgyptDigitalInfrastructure.com
+        الجهات التي تطور مبادرة مستقلة
+        تستهدف سوق البنية التحتية الرقمية المصري.
+      </p>
+    </div>
+
+    <div class="use-grid">
+
+      <div class="use-card">
+
+        <h3>
+          <span class="en">Market Entry</span>
+          <span class="ar">دخول السوق المصري</span>
+        </h3>
+
+        <p class="en">
+          A dedicated digital identity for a company
+          introducing infrastructure-related services
+          or a new market initiative in Egypt.
+        </p>
+
+        <p class="ar">
+          هوية رقمية مستقلة لشركة تقدم خدمات
+          جديدة أو تطلق مبادرة تستهدف
+          سوق البنية التحتية الرقمية في مصر.
+        </p>
+
+      </div>
+
+      <div class="use-card">
+
+        <h3>
+          <span class="en">B2B Lead Generation</span>
+          <span class="ar">جذب العملاء والشركات</span>
+        </h3>
+
+        <p class="en">
+          A destination for an Egypt-focused
+          campaign targeting investors, infrastructure
+          providers, enterprises or business partners.
+        </p>
+
+        <p class="ar">
+          وجهة رقمية لحملة متخصصة تستهدف
+          المستثمرين ومقدمي الخدمات
+          وشركاء الأعمال في القطاع.
+        </p>
+
+      </div>
+
+      <div class="use-card">
+
+        <h3>
+          <span class="en">Industry Intelligence</span>
+          <span class="ar">المعلومات والتحليلات القطاعية</span>
+        </h3>
+
+        <p class="en">
+          A possible identity for an independent
+          data center, connectivity and digital
+          infrastructure information platform.
+        </p>
+
+        <p class="ar">
+          اسم محتمل لمنصة مستقلة تقدم
+          معلومات وتحليلات عن مراكز البيانات
+          والاتصالات والاستثمارات الرقمية في مصر.
+        </p>
+
       </div>
 
     </div>
-  </section>
 
-  <section class="contact-section">
-    <h3>للتواصل المباشر</h3>
-    <div class="btn-container">
-      <a href="https://wa.me/201000001802" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:+201000001802" class="btn btn-call"><i class="fas fa-phone"></i> اتصال</a>
-      <a href="mailto:Hussein.lashin@snapthename.com" class="btn btn-email"><i class="fas fa-envelope"></i> إيميل</a>
+  </div>
+</section>
+
+<!-- BUYER OBJECTION -->
+
+<section class="section">
+  <div class="container">
+
+    <div class="question-box">
+
+      <div class="en">
+        <h3>
+          Why Acquire a Separate Domain
+          If You Already Have a Website?
+        </h3>
+
+        <p>
+          For many established businesses,
+          an existing website and a dedicated
+          internal page may be sufficient.
+        </p>
+
+        <p>
+          A separate descriptive domain becomes
+          worth considering when an organization
+          wants a distinct market-facing initiative,
+          an independent information platform,
+          or a focused campaign identity.
+        </p>
+
+        <p>
+          EgyptDigitalInfrastructure.com can communicate
+          both the geographic focus and the sector
+          directly through its name.
+        </p>
+
+        <p>
+          The domain itself does not guarantee
+          search rankings, visitors or sales.
+          Its value depends on the buyer's
+          intended use and business strategy.
+        </p>
+      </div>
+
+      <div class="ar">
+        <h3>
+          لماذا تشتري دومينًا مستقلًا
+          رغم امتلاك شركتك موقعًا بالفعل؟
+        </h3>
+
+        <p>
+          بالنسبة لشركات كثيرة، قد يكون
+          الموقع الحالي وصفحة داخلية
+          كافيين تمامًا.
+        </p>
+
+        <p>
+          لكن الاسم المستقل يستحق الدراسة
+          عندما تحتاج الشركة إلى إطلاق
+          مبادرة منفصلة أو منصة معلومات
+          أو حملة تسويقية متخصصة.
+        </p>
+
+        <p>
+          يتميز EgyptDigitalInfrastructure.com
+          بأنه يوضح القطاع والسوق الجغرافي
+          المستهدف مباشرة من خلال الاسم.
+        </p>
+
+        <p>
+          امتلاك الدومين وحده لا يضمن
+          تصدر نتائج البحث أو تحقيق زيارات
+          أو مبيعات. قيمته مرتبطة
+          بطريقة استخدام المشتري له.
+        </p>
+      </div>
+
     </div>
-  </section>
 
-  <footer>
-    SnapTheName.com &copy; 2026
-  </footer>
+  </div>
+</section>
+
+<!-- ACQUISITION PROCESS -->
+
+<section class="section">
+  <div class="container">
+
+    <h2 class="section-title">
+      <span class="en">A Straightforward Acquisition Process</span>
+      <span class="ar">خطوات واضحة للاستحواذ على الدومين</span>
+    </h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+
+        <h3>
+          <span class="en">Start a Discussion</span>
+          <span class="ar">ابدأ التواصل</span>
+        </h3>
+
+        <p class="en">
+          Contact the owner to discuss
+          your interest and intended use.
+        </p>
+
+        <p class="ar">
+          تواصل مع المالك لمناقشة
+          الاهتمام بالشراء والاستخدام المقترح.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+
+        <h3>
+          <span class="en">Agree on Terms</span>
+          <span class="ar">الاتفاق على الشروط</span>
+        </h3>
+
+        <p class="en">
+          Discuss the acquisition price,
+          payment method and transfer arrangements.
+        </p>
+
+        <p class="ar">
+          مناقشة سعر الاستحواذ وطريقة
+          الدفع وترتيبات نقل الملكية.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+
+        <h3>
+          <span class="en">Secure Transfer</span>
+          <span class="ar">نقل الملكية بأمان</span>
+        </h3>
+
+        <p class="en">
+          Complete the transaction through
+          an agreed trusted marketplace
+          or escrow provider, subject to its terms.
+        </p>
+
+        <p class="ar">
+          إتمام الصفقة عبر منصة بيع موثوقة
+          أو خدمة ضمان دفع متفق عليها،
+          وفق شروط الجهة المستخدمة.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="en">
+      <h2 class="section-title">
+        Considering an Egypt-Focused Digital Infrastructure Initiative?
+      </h2>
+
+      <p>
+        EgyptDigitalInfrastructure.com is available
+        for acquisition.
+
+        Contact the domain owner directly
+        to discuss suitability and acquisition terms.
+      </p>
+    </div>
+
+    <div class="ar">
+      <h2 class="section-title">
+        هل تطور مشروعًا أو مبادرة للبنية التحتية الرقمية في مصر؟
+      </h2>
+
+      <p>
+        الدومين متاح للاستحواذ.
+
+        تواصل مباشرة مع المالك
+        لمناقشة مدى ملاءمته لمشروعك
+        وشروط الشراء.
+      </p>
+    </div>
+
+    <div class="actions">
+
+      <a class="btn btn-primary"
+         href="https://wa.me/201000001802?text=Hello%2C%20I%20am%20interested%20in%20EgyptDigitalInfrastructure.com.%20I%20would%20like%20to%20discuss%20acquisition%20terms."
+         target="_blank" rel="noopener noreferrer">
+        <span class="en">Discuss on WhatsApp</span>
+        <span class="ar">مناقشة الشراء عبر واتساب</span>
+      </a>
+
+      <a class="btn btn-outline"
+         href="mailto:Hussein.lashin@snapthename.com?subject=Acquisition%20Inquiry%20-%20EgyptDigitalInfrastructure.com&body=Hello%2C%0A%0AI%20would%20like%20to%20discuss%20acquiring%20EgyptDigitalInfrastructure.com.%0A%0ACompany%3A%0AIntended%20use%3A%0A%0ABest%20regards">
+        <span class="en">Send an Email Inquiry</span>
+        <span class="ar">إرسال استفسار بالإيميل</span>
+      </a>
+
+    </div>
+
+    <p class="disclaimer en">
+      Independent domain offering by SnapTheName.
+      No affiliation with the companies, projects,
+      or government organizations referenced above.
+      News links are provided for market context only.
+      Offering includes the domain name, not an
+      operating infrastructure business.
+    </p>
+
+    <p class="disclaimer ar">
+      عرض مستقل لبيع اسم النطاق من SnapTheName.
+      لا توجد صلة أو شراكة مع الشركات
+      أو المشروعات أو الجهات الحكومية المذكورة.
+      الأخبار لأغراض توضيح تطورات السوق فقط.
+      المعروض هو اسم النطاق وليس مشروعًا تشغيليًا.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>© 2026 SnapTheName.com</div>
+
+  <div class="en">
+    Strategic Domain Assets | Independent Domain Sales
+  </div>
+
+  <div class="ar">
+    أسماء نطاقات تجارية | بيع مستقل للأصول الرقمية
+  </div>
+</footer>
+
+<script>
+function switchLanguage() {
+  const body = document.body;
+  const html = document.documentElement;
+  const button = document.getElementById("languageButton");
+
+  const isArabic = body.classList.contains("lang-ar");
+
+  if (isArabic) {
+    body.classList.remove("lang-ar");
+    body.classList.add("lang-en");
+    html.lang = "en";
+    html.dir = "ltr";
+    button.textContent = "العربية";
+  } else {
+    body.classList.remove("lang-en");
+    body.classList.add("lang-ar");
+    html.lang = "ar";
+    html.dir = "rtl";
+    button.textContent = "English";
+  }
+}
+</script>
 
 </body>
 </html>
